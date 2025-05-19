@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>ShopEase - Modern E-commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Shop<span>Ease</span></a>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Search products...">
+                    </div>
+
+                    <div class="cart-icon" id="cartToggle">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">3</span>
+                    </div>
+
+                    <div class="user-account">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Shop the Latest Trends</h1>
+            <p>Discover thousands of products with fast shipping and easy returns</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-img">
+                        <!-- Category 1 Image -->
+                        📱
+                    </div>
+                    <div class="category-name">Electronics</div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img">
+                        <!-- Category 2 Image -->
+                        👕
+                    </div>
+                    <div class="category-name">Fashion</div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img">
+                        <!-- Category 3 Image -->
+                        🏠
+                    </div>
+                    <div class="category-name">Home & Garden</div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-img">
+                        <!-- Category 4 Image -->
+                        ✨
+                    </div>
+                    <div class="category-name">Beauty</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+
+    <section class="featured-products">
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <!-- <a href="#" class="logo">Shop<span>Ease</span></a> -->
+
+                    <ul class="nav-links">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">A</a></li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <div class="search-bar">
+                            <input type="text" class="search-input" placeholder="Search products...">
+                        </div>
+
+                        <!-- <div class="cart-icon" id="cartToggle">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">3</span>
+                        </div> -->
+
+                        <!-- <div class="user-account">
+                            <i class="fa-solid fa-user"></i>
+                        </div> -->
+
+                        <div class="mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <a href="#" class="btn btn-outline">View All</a>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-badge">Sale</span>
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics</div>
+                        <h3 class="product-title">Wireless Bluetooth Headphones</h3>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="old-price">$129.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fashion</div>
+                        <h3 class="product-title">Classic Leather Watch</h3>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <span class="product-badge">New</span>
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Home & Garden</div>
+                        <h3 class="product-title">Smart Home Speaker</h3>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="old-price">$199.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Beauty</div>
+                        <h3 class="product-title">Premium Skincare Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">$59.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="special-offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h2>Special Sale - 50% Off</h2>
+                    <p>Don't miss our biggest sale of the year. Limited time only!</p>
+
+                    <div class="offer-countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-number">02</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">18</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">45</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">30</div>
+                            <div class="countdown-label">Seconds</div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-secondary">Shop the Sale</a>
+                </div>
+
+                <div class="offer-image">
+                    <img src="/api/placeholder/400/300" alt="Special offer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>New Arrivals</h2>
+                <a href="#" class="btn btn-outline">View All</a>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-badge">New</span>
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics</div>
+                        <h3 class="product-title">Smart Fitness Tracker</h3>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <span class="product-badge">New</span>
+                    <button class="wishlist-btn">❤</button>
+                    <div class="product-img">
+                        <img src="/api/placeholder/250/200" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics</div>
+                        <h3 class="product-title">Smart Fitness Tracker</h3>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline">View Details</button>
+                            <button class="btn" onclick="addToCart(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Contact us today to schedule a free consultation and discover how we can help you achieve your goals.</p>
+            <a href="#" class="btn cta-btn">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>YourBrand</h3>
+                    <p>We help businesses transform and grow with innovative solutions and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#">F</a>
+                        <a href="#">T</a>
+                        <a href="#">I</a>
+                        <a href="#">L</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Digital Transformation</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">Business Consulting</a></li>
+                        <li><a href="#">Marketing Strategy</a></li>
+                        <li><a href="#">IT Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>123 Business Avenue</li>
+                        <li>New York, NY 10001</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@yourbrand.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 YourBrand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
